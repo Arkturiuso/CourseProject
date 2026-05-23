@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true,
+    "lib": ["ES2020", "DOM"],
+    "target": "ES2020",
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "moduleResolution": "bundler"
+  },
+  "include": [
+    "src/**/*",
+    "*.config.ts",
+    "*.config.js",
+    ".eslintrc.cjs",
+    ".prettierrc.cjs"
+  ],
+  "exclude": ["node_modules", "dist"]
+}
