@@ -1,0 +1,172 @@
+.main-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    padding-bottom: 40px;
+}
+
+.main-header {
+    background-color: white;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 32px;
+
+    h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #1f2937;
+    }
+}
+
+.btn-logout {
+    padding: 8px 16px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Карточки */
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 32px;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+// Форма профиля
+.profile-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 16px;
+    align-items: end;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+// Сетка турниров
+.tournaments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.tournament-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e5e7eb;
+}
+
+.t-header {
+    margin-bottom: 12px;
+
+    h3 {
+        margin: 8px 0 0;
+        font-size: 18px;
+    }
+}
+
+.t-details p {
+    margin: 4px 0;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+.t-footer {
+    margin-top: 16px;
+}
+
+// Кнопки и бейджи
+.btn-apply {
+    width: 100%;
+    padding: 10px;
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #6d28d9;
+    }
+
+    &:disabled {
+        background-color: #9ca3af;
+        cursor: not-allowed;
+    }
+}
+
+.btn-disabled {
+    width: 100%;
+    padding: 10px;
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    border: none;
+    border-radius: 6px;
+    cursor: not-allowed;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 600;
+
+    &.registration {
+        background-color: #dbeafe;
+        color: #1e40af;
+    }
+    &.active {
+        background-color: #d1fae5;
+        color: #065f46;
+    }
+    &.finished {
+        background-color: #fee2e2;
+        color: #991b1b;
+    }
+}

@@ -2,9 +2,9 @@ name: Deploy Frontend to GitHub Pages
 
 on:
   push:
-    branches: ['main', 'master']  # ← Убедись, что имя ветки совпадает с твоей
+    branches: ['main']
     paths:
-      - 'frontend/**'             # ← Запускается только при изменении фронтенда
+      - 'frontend/**'             # Запускается только при изменении фронтенда
       - '.github/workflows/deploy.yml'
 
 permissions:

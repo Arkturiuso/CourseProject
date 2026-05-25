@@ -1,8 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
+import AppRouter from './AppRouter';
+
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <h1>Инфраструктура готова</h1>
+        <AppRouter />
     </StrictMode>
 );

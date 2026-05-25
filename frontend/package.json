@@ -2,7 +2,8 @@
   "type": "module",
   "dependencies": {
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "react-router-dom": "7.15.1"
   },
   "packageManager": "yarn@4.10.3",
   "devDependencies": {
@@ -17,6 +18,7 @@
     "gh-pages": "6.3.0",
     "globals": "^17.6.0",
     "husky": "9.1.7",
+    "less": "4.6.4",
     "lint-staged": "17.0.5",
     "prettier": "^3.8.3",
     "typescript": "^6.0.3",
