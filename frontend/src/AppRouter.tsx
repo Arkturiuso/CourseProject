@@ -5,7 +5,7 @@ import MainPage from './MainPage';
 
 export default function AppRouter() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
                 <Route path="/auth" element={<AuthPage />} />
                 <Route path="/" element={<MainPage />} />
